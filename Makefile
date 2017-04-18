@@ -6,7 +6,7 @@ DCMP_EXEC_MONGO = ${DCMP} exec mongo
 
 build: 
 	${DCMP} build
-
+	${DCMP} run app bundle exec rails db:seed
 run:
 	${DCMP} up
 
