@@ -82,8 +82,8 @@ Using:
 
 ```json
 {
-    name: 'Buzz Test',
-    description: 'Buzz Test Beer'
+    "name": "Buzz Test",
+    "description": "Buzz Test Beer"
 }
 ```
 
