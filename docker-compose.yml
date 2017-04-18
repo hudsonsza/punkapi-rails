@@ -1,0 +1,28 @@
+version: '2'
+services:
+  app:
+    build: .
+    command: make development
+    volumes:
+      - ./:/src
+    depends_on:
+      - mongo
+      - redis
+    ports:
+      - 9292:9292
+    env_file:
+      - .env
+    networks:
+      - default
+  redis:
+    image: redis
+    networks:
+      - default
+  mongo:
+    image: mongo:3.0.4
+    command: --smallfiles
+    volumes:
+      - ./data/db:/data/db:rw
+      - ./data/dumps:/data/dumps:rw
+    networks:
+      - default

@@ -1,0 +1,14 @@
+development:
+  adapter: redis
+  url: redis://<%= ENV['REDIS_HOST'] %>:<%= ENV['REDIS_PORT'] %>/1
+  channel_prefix: api_development
+
+test:
+  adapter: redis
+  url: redis://<%= ENV['REDIS_HOST'] %>:<%= ENV['REDIS_PORT'] %>/1
+  channel_prefix: api_test
+
+production:
+  adapter: redis
+  url: redis://<%= ENV['REDIS_HOST'] %>:<%= ENV['REDIS_PORT'] %>/1
+  channel_prefix: api_production
