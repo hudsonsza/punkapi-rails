@@ -76,6 +76,17 @@ make rebuild
 
 # Simple documentation
 
+## POST/PUT
+
+Using:
+
+```json
+{
+    name: 'Buzz',
+    description: 'Buzz Beer'
+}
+```
+
 ## Get Beers
 
 Gets beers from the api, you can apply several filters using url paramaters, the available options are listed below.
