@@ -55,19 +55,23 @@ make build
 make run
 ```
 
-Now access http://localhost:9292
-
-# Rebuild
-
-```bash
-make rebuild
-```
-
 # Testing and RubyStyle
 
 ```bash
 make rubocop
 make test
+```
+
+# Application Access
+
+Aplication Access http://localhost:9292/
+Coverage Access http://localhost:9292/coverage/
+Swager Access http://localhost:9293
+
+# Rebuild
+
+```bash
+make rebuild
 ```
 
 # Simple documentation

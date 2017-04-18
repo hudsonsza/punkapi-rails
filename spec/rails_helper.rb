@@ -16,6 +16,7 @@ SimpleCov.start 'rails' do
     source_file.lines.count < 5
   end
 end
+SimpleCov.coverage_dir(Rails.root.join('public/coverage'))
 
 # Add additional requires below this line. Rails is not loaded until this point!
 

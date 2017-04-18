@@ -25,6 +25,9 @@ rubocop:
 test:
 	${DCMP} run app bash -c "RAILS_ENV=test bundle exec rspec"
 
+swaggerize:
+	${DCMP} run app rake rswag:specs:swaggerize
+
 development:
 	bundle install
 	rm -f tmp/pids/server.pid
