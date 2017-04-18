@@ -4,9 +4,10 @@ Simple Rails Version using best development practices.
 
 # TODO
 
+## Requisitos
 * ~~Utilizar como exemplo a seguinte API: https://punkapi.com/documentation/v2~~
 * ~~Criar três ou mais Models~~
-**Beers, FoodParing**
+**Beers, FoodPairing, Pub**
 * ~~Ter uma associação entre Models do tipo 1..n~~
 * ~~Ter uma associação entre Models do tipo n..n~~
 * ~~A aplicação deve ser Rails API-only~~
@@ -24,18 +25,26 @@ Simple Rails Version using best development practices.
 * ~~Utilizar o RVM ou outra ferramenta para gerenciamento de versões Ruby~~
 **Usado docker-compose e criado tasks com o Makefile**
 * ~~Enviar o código para um repositório git público (github, Bitbucket, Gitlab)~~
----
+
+## Bônus
 * ~~Utilizar Swagger ou outra ferramenta para documentação da API~~
 * Criar uma aplicação web separada em Ruby on Rails que consuma o Web Service criado
 * ~~Implementar testes com RSpec e/ou Cucumber~~
 * ~~Utilizar FactoryGirl ao invés de fixtures~~
----
-* ~~Utilizando RubyStyle com RuboCop~~
-* ~~Banco de dados NoSQL como MongoDB~~
-* ~~Makefile para automatização de tarefas de desenvolvimento~~
-* ~~Utilizar .env para facilitar o gerenciamento de environments~~
-* ~~Aplicação compativel com Twelve-Factor App~~
+
+## Melhorias
+* ~~Utilizando RubyStyle com RuboCop.~~
+* ~~Banco de dados NoSQL como MongoDB.~~
+* ~~Makefile para automatização de tarefas de desenvolvimento.~~
+* ~~Utilizar .env para facilitar o gerenciamento de environments.~~
+* ~~Aplicação compativel com Twelve-Factor App.~~
 * ~~Utilizar docker-compose with redis, mongo e aplicação.~~
+
+## Novas melhorias
+* Adicionar version a url /version/beers
+* Adicionar crud para Pub e nested_attributes para FoodPairing
+* Melhorar integração com swagger
+* ...
 
 # Quickstart
 
@@ -68,7 +77,7 @@ make test
 Gets beers from the api, you can apply several filters using url paramaters, the available options are listed below.
 
 ```bash
-$ curl https://localhost:9292/v1/beers
+$ curl https://localhost:9292/beers
 ```
 
 ## Get Random Beer
@@ -76,7 +85,7 @@ $ curl https://localhost:9292/v1/beers
 Gets a random beer from the API, this takes no paramaters.
 
 ```bash
-$ curl https://localhost:9292/v1/beers/random
+$ curl https://localhost:9292/beers/random
 ```
 
 ## Example Response
@@ -131,4 +140,4 @@ SimpleCov is a code coverage analysis tool for Ruby. It uses Ruby's built-in Cov
 
 ## RubyCop
 
-RuboCop is a Ruby static code analyzer. Out of the box it will enforce many of the guidelines outlined in the community Ruby Style Guide./
+RuboCop is a Ruby static code analyzer. Out of the box it will enforce many of the guidelines outlined in the community Ruby Style Guide.
